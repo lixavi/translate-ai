@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+
+
+body{  
+    background-color: var(--body);
+}
+.contactus-section{
+    width: 100%;
+  
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+}
+.test1{
+   
+    width: 43rem;
+    background-color: white;
+    box-shadow: 2 23234;
+    /* border: none; */
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.contact-center{
+    width: 84%;
+    margin: auto;
+}
+.contact-input-feild-sub{
+    font-size: 1.5rem;
+    
+    width: 38rem;
+}
+.form-control1{
+    height: 3rem;
+}
+#contact-input-height{
+height: 3rem;
+}
+.contact-input-feild-sub{
+    font-size: 1em;
+    height: 3rem;
+    
+}
+.height-image{
+    height: 20rem;
+}
+.btn-style {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.btn-style:first-child {
+    margin-right: 2rem;
+}
+
+.btn-style:hover {
+    border: 0.1rem solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0.2rem 0.3rem rgba(red, green, blue, alpha);
+}
+
+.btn-second {
+    border: 0.1rem solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0.2rem 0.3rem rgba(red, green, blue, alpha);
+}
+
+
+/* ------------------------------contact Us------------------------------------ */
+
+
+
+.contact-input-feild {
+    margin-bottom: 1.4rem;
+}
+
+.form-control {
+    height: 5rem;
+    border: 1px solid #ced4da;
+    
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    font-weight: lighter;
+}
+
+
+
+.main-hero-para {
+    color: #858585;
+    font-size: 15px;
+}
+
+
+
+/* --------------------------------- 404 Error Page Section  Ends
+                                                  -------------------------------------------------------*/
+
+/* --------------------------------- responsive media queries  
+                                                  -------------------------------------------------------*/
+
+@media (max-width: 1000px) {
+
+   
+   
+   
+}
+@media(max-width:998px){
+
+
+    .contact-input-feild-sub{
+        font-size: 1rem;
+        
+        width: 100%
+    }
+    .contact-center{
+        width: 100%;
+        margin: auto;
+    }
+
+.contact-height{
+    margin-top: 12rem !important;
+}
+
+.contact-rightside form .main-hero-para{
+    font-size: 1.3rem;
+color: var(--text-color);
+margin: 0;
+font-weight: lighter;
+width: 98%;
+padding: 0 1rem;
+}
+}
+.alert1 {
+   
+    width: 38rem;
+}

@@ -1,0 +1,38 @@
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+ 
+.progress {
+ height: 10px;
+}
+  
+.navbar-team {
+margin-top: 3rem;
+}
+.navbar-team h1 {
+padding-bottom: 20px;
+text-transform: capitalize;
+}
+  
+ 
+.pagination{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}

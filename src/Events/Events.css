@@ -1,0 +1,12 @@
+.section-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.pagination{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
