@@ -1,4 +1,4 @@
-# TranslateAI: Machine Translation Module
+# TranslateAI
 
 TranslateAI is a Python-based machine translation module employing Neural Machine Translation (NMT) techniques with support for multiple languages. This module provides functionalities to train and utilize NMT models for translating text between different languages.
 
@@ -15,6 +15,6 @@ TranslateAI is a Python-based machine translation module employing Neural Machin
 To install TranslateAI, simply clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/translateai.git
+git clone https://github.com/lixavi/translateai.git
 cd translateai
 pip install -r requirements.txt
