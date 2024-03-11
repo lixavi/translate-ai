@@ -19,3 +19,33 @@ class Encoder(nn.Module):
             # For multi-layer GRU, concatenate the final states of each layer
             hidden = torch.cat([hidden[i,:,:] for i in range(self.num_layers)], dim=1)
         return outputs, hidden
+
+    def backward(self, input_seq, input_lengths):
+        embedded = self.embedding(input_seq)
+        packed = nn.utils.rnn.pack_padded_sequence(embedded, input_lengths)
+        outputs, hidden = self.gru(packed)
+        outputs, _ = nn.utils.rnn.pad_packed_sequence(outputs)
+        if self.num_layers > 1:
+            # For multi-layer GRU, concatenate the final states of each layer
+            hidden = torch.cat([hidden[i,:,:] for i in range(self.num_layers)], dim=1)
+        return outputs, hidden
+
+    def leftward(self, input_seq, input_lengths):
+        embedded = self.embedding(input_seq)
+        packed = nn.utils.rnn.pack_padded_sequence(embedded, input_lengths)
+        outputs, hidden = self.gru(packed)
+        outputs, _ = nn.utils.rnn.pad_packed_sequence(outputs)
+        if self.num_layers > 1:
+            # For multi-layer GRU, concatenate the final states of each layer
+            hidden = torch.cat([hidden[i,:,:] for i in range(self.num_layers)], dim=1)
+        return outputs, hidden
+
+    def rightward(self, input_seq, input_lengths):
+        embedded = self.embedding(input_seq)
+        packed = nn.utils.rnn.pack_padded_sequence(embedded, input_lengths)
+        outputs, hidden = self.gru(packed)
+        outputs, _ = nn.utils.rnn.pad_packed_sequence(outputs)
+        if self.num_layers > 1:
+            # For multi-layer GRU, concatenate the final states of each layer
+            hidden = torch.cat([hidden[i,:,:] for i in range(self.num_layers)], dim=1)
+        return outputs, hidden
