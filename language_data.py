@@ -50,3 +50,33 @@ class LanguageData:
         - list: List of tuples containing language code and name pairs.
         """
         return list(self._supported_languages.items())
+
+    def get_language_code(self, lang_name):
+        """
+        Retrieves the code of a language given its name.
+
+        Args:
+        - lang_name (str): Name of the language.
+
+        Returns:
+        - str: Language code.
+        """
+        for code, name in self._supported_languages.items():
+            if name.lower() == lang_name.lower():
+                return code
+        return None
+
+    def get_language_code(self, lang_name):
+        """
+        Retrieves the code of a language given its name.
+
+        Args:
+        - lang_name (str): Name of the language.
+
+        Returns:
+        - str: Language code.
+        """
+        for code, name in self._supported_languages.items():
+            if name.lower() == lang_name.lower():
+                return code
+        return None
